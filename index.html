@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Stables - A place for help, healing and hope</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2f855a',
+                        secondary: '#38a169',
+                        leaf: {
+                            50: '#f3faf5',
+                            100: '#def7e7',
+                            200: '#b8ebce',
+                            300: '#8fddb1',
+                            400: '#5fcf91',
+                            500: '#38a169',
+                            600: '#2f855a',
+                            700: '#277148',
+                            800: '#1f5b3a',
+                            900: '#173f2a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-leaf-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-primary">The Stables</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-primary transition duration-300">Home</a>
+                    <a href="#services" class="text-gray-700 hover:text-primary transition duration-300">Services</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary transition duration-300">About</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary transition duration-300">Contact</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-primary">Home</a>
+                <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-primary">Services</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-primary">About</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-primary">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-16 text-white">
+        <div class="absolute inset-0">
+            <img src="hero.jpg" alt="The Stables" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-leaf-800/70"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">The Stables</h1>
+                <p class="text-xl md:text-2xl mb-8">A place for help, healing and hope.</p>
+                <p class="text-lg md:text-xl mb-12 max-w-3xl mx-auto">
+                    The Stables is a small church with a big heart for Onkaparinga. 
+                    Our Op Shop and 'Stables Help' program support local families, 
+                    school chaplaincy, and community projects in the Pacific.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#services" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition duration-300">
+                        Our Services
+                    </a>
+                    <a href="#contact" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition duration-300">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-leaf-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    We provide various services to support our community in Onkaparinga
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Op Shop -->
+                <div class="bg-white rounded-lg p-8 text-center hover:shadow-lg transition duration-300 border border-leaf-200">
+                    <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-store text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Op Shop</h3>
+                    <p class="text-gray-600 mb-4">
+                        Quality second-hand items at affordable prices to support our community programs.
+                    </p>
+                    <div class="text-sm text-gray-500">
+                        <p><strong>Hours:</strong></p>
+                        <p>Monday to Friday</p>
+                        <p>Second Saturday of each month</p>
+                        <p>9 am – 2 pm</p>
+                    </div>
+                </div>
+
+                <!-- Food Assistance -->
+                <div class="bg-white rounded-lg p-8 text-center hover:shadow-lg transition duration-300 border border-leaf-200">
+                    <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-utensils text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Food Assistance</h3>
+                    <p class="text-gray-600 mb-4">
+                        Emergency food support for families in need within our community.
+                    </p>
+                    <div class="text-sm text-gray-500">
+                        <p><strong>Need food support?</strong></p>
+                        <p>Call 8326 4455</p>
+                        <p>Weekday mornings</p>
+                    </div>
+                </div>
+
+                <!-- Stable Help -->
+                <div class="bg-white rounded-lg p-8 text-center hover:shadow-lg transition duration-300 border border-leaf-200">
+                    <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-hands-helping text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Stable Help</h3>
+                    <p class="text-gray-600 mb-4">
+                        Community support program providing assistance to local families and individuals.
+                    </p>
+                </div>
+
+                <!-- Financial Counselling -->
+                <div class="bg-white rounded-lg p-8 text-center hover:shadow-lg transition duration-300 border border-leaf-200">
+                    <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-chart-line text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Financial Counselling</h3>
+                    <p class="text-gray-600 mb-4">
+                        Professional financial advice and support for those facing financial difficulties.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About The Stables</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        The Stables is more than just a church - we're a community hub dedicated to serving 
+                        the people of Onkaparinga with compassion and practical support.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Our mission is to provide help, healing, and hope through our various programs 
+                        including the Op Shop, food assistance, and community support initiatives.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8">
+                        We also support school chaplaincy and community projects in the Pacific, 
+                        extending our reach beyond our local community.
+                    </p>
+                    
+                    <div class="bg-leaf-50 rounded-lg p-6 shadow-md border border-leaf-200">
+                        <h3 class="text-xl font-semibold mb-4 text-primary">Sunday Worship</h3>
+                        <p class="text-gray-600 mb-2"><strong>Time:</strong> 10 AM</p>
+                        <p class="text-gray-600"><strong>Location:</strong> 684 Brodie Rd, Huntfield Heights</p>
+                    </div>
+                </div>
+                
+                <div class="bg-leaf-50 rounded-lg p-8 shadow-lg border border-leaf-200">
+                    <h3 class="text-2xl font-semibold mb-6 text-center text-primary">Our Values</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-heart text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Compassion</h4>
+                                <p class="text-gray-600">Serving others with love and understanding</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-hands-helping text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Community</h4>
+                                <p class="text-gray-600">Building strong, supportive relationships</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-cross text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Faith</h4>
+                                <p class="text-gray-600">Living out our Christian values in action</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-star text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Hope</h4>
+                                <p class="text-gray-600">Providing hope for a better future</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-leaf-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Make Contact!</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Get in touch with us for support, information, or to learn more about our services
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <div class="bg-white rounded-lg p-8 border border-leaf-200">
+                        <h3 class="text-2xl font-semibold mb-6 text-primary">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-center">
+                                <div class="bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Phone</h4>
+                                    <p class="text-gray-600">(08) 8326 4455</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Email</h4>
+                                    <p class="text-gray-600">admin@stables.org.au</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                    <i class="fab fa-facebook"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Facebook</h4>
+                                    <a href="#" class="text-blue-600 hover:text-blue-800">Follow us on Facebook</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Address</h4>
+                                    <p class="text-gray-600">684 Brodie Rd, Huntfield Heights</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg p-8 border border-leaf-200">
+                        <h3 class="text-2xl font-semibold mb-6 text-primary">Business Details</h3>
+                        <div class="space-y-2 text-gray-600">
+                            <p><strong>ABN:</strong> 94349811691</p>
+                            <p><strong>Organization:</strong> Stables Christian Centre</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Map -->
+                <div class="bg-white rounded-lg p-8 border border-leaf-200">
+                    <h3 class="text-2xl font-semibold mb-6 text-primary">Find Us</h3>
+                    <div class="bg-leaf-200 rounded-lg h-96 flex items-center justify-center">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.5!2d138.5!3d-35.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab0c9c7c7c7c7c7%3A0x7c7c7c7c7c7c7c7c!2s684+Brodie+Rd%2C+Huntfield+Heights+SA+5163%2C+Australia!5e0!3m2!1sen!2sau!4v1234567890"
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="rounded-lg">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-leaf-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">The Stables</h3>
+                    <p class="text-leaf-300 mb-4">
+                        A place for help, healing and hope in Onkaparinga.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-leaf-300 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="mailto:admin@stables.org.au" class="text-leaf-300 hover:text-white transition duration-300">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-leaf-300">
+                        <p><i class="fas fa-phone mr-2"></i>(08) 8326 4455</p>
+                        <p><i class="fas fa-envelope mr-2"></i>admin@stables.org.au</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>684 Brodie Rd, Huntfield Heights</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-leaf-700 mt-8 pt-8 text-center text-leaf-300">
+                <p>&copy; 2024 The Stables Christian Centre. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                // Close mobile menu if open
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Active navigation highlighting
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('nav a[href^="#"]');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-primary');
+                link.classList.add('text-gray-700');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.remove('text-gray-700');
+                    link.classList.add('text-primary');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
